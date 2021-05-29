@@ -38,6 +38,7 @@ window.linkArticle = function( element ) {
 	
 	var $li = $( '<li>' );
 	
+	// @TODO: We can make this dynamic somehow, but how would we make it permanant? 
 	var id = $h2.attr( 'data-id' );
 	
 	if ( 'string' !== typeof id ) {
