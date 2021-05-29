@@ -17,7 +17,8 @@ window.stylizeArticle= function( element ) {
 
 	// Styleize the header of the element.
 	$( 'header', element ).each( function( i, header ) {
-		$( header ).addClass( 'page-header' );
+		$( header ).addClass( 'page-header' )
+			.addClass( 'text-center' );
 	} );
 };
 
@@ -71,7 +72,6 @@ window.get = function( url, element ) {
 		
 		window.stylizeArticle( element );
 		window.linkArticle( element );
-		
 	};
 };
 
