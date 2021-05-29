@@ -1,0 +1,38 @@
+<NotepadPlus>
+    <Project name="xc0py32-com">
+        <Folder name="blogs">
+            <File name="blogs\5-22-1998.md" />
+        </Folder>
+        <Folder name="bootstra.386">
+            <Folder name="css">
+                <Folder name="fonts">
+                    <File name="bootstra.386\css\fonts\Fixedsys500c.eot" />
+                    <File name="bootstra.386\css\fonts\Fixedsys500c.otf" />
+                    <File name="bootstra.386\css\fonts\Fixedsys500c.svg" />
+                    <File name="bootstra.386\css\fonts\Fixedsys500c.ttf" />
+                    <File name="bootstra.386\css\fonts\Fixedsys500c.woff" />
+                </Folder>
+                <File name="bootstra.386\css\bootstrap-responsive.css" />
+                <File name="bootstra.386\css\bootstrap-responsive.min.css" />
+                <File name="bootstra.386\css\bootstrap.css" />
+                <File name="bootstra.386\css\bootstrap.min.css" />
+            </Folder>
+            <Folder name="img">
+                <File name="bootstra.386\img\glyphicons-halflings-white.png" />
+                <File name="bootstra.386\img\glyphicons-halflings.png" />
+            </Folder>
+            <Folder name="js">
+                <File name="bootstra.386\js\bootstrap.js" />
+                <File name="bootstra.386\js\bootstrap.min.js" />
+            </Folder>
+            <Folder name="v2" />
+        </Folder>
+        <Folder name="media">
+            <File name="media\screenshot-of-my-editing-this-post.GIF" />
+        </Folder>
+        <File name="app.js" />
+        <File name="custom.css" />
+        <File name="index.html" />
+        <File name="robots.txt" />
+    </Project>
+</NotepadPlus>
