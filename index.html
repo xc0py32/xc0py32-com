@@ -1,90 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
-		
-		<title>xc0py32 &mdash; A retro weblog.</title>
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="A retro weblog.">
-		<meta name="author" content="xc0py32">
+<head>
+	<meta charset="utf-8">
+	
+	<title>xc0py32 &mdash; A retro weblog.</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A retro weblog.">
+	<meta name="author" content="xc0py32">
 
-		<link href="./bootstra.386/css/bootstrap.min.css" rel="stylesheet">
-		<link href="./bootstra.386/css/bootstrap-responsive.min.css" rel="stylesheet">
-	</head>
+	<link href="./bootstra.386/css/bootstrap.min.css" rel="stylesheet">
+	<link href="./bootstra.386/css/bootstrap-responsive.min.css" rel="stylesheet">
+	
+	<link href="./custom.css" rel="stylesheet">
+</head>
 
-	<body data-spy="scroll" data-target=".bs-docs-sidebar">
-		<div class="navbar navbar-inverse navbar-fixed-top">
-			<div class="navbar-inner">
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+	<div class="container main">
+		<div class="row">
+			<header class="jumbotron subhead" id="overview">
 				<div class="container">
-					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
-					
-					<a class="brand" href="./index.html">xc0py32.com</a>
-		
-					<div class="nav-collapse collapse">
-						<ul class="nav">
-							<li class=""><a href=""></a></li>
-						</ul>
-					</div>
+					<h1>xc0py32</h1>
+					<p>A retro weblog.</p>
 				</div>
-			</div>
-		</div>
-
-		<header class="jumbotron subhead" id="overview">
-			<div class="container">
-				<h1>hi</h1>
-				<p class="lead">A retro weblog.</p>
-			</div>
-		</header>
-
-		<div class="container">
-			<div class="row">
-				<div class="span3 bs-docs-sidebar">
-					<ul class="nav nav-list bs-docs-sidenav">
-						<li><a href="#5-22-1998">May 28th, 1998</a></li>
-					</ul>
+			</header>
+			
+				<div class="span3 bs-docs-sidebar text-center">
+					<ul class="nav nav-tabs nav-stacked blogs"><!-- Auto-populates when you publish a .md below--></ul>
 				</div><!--/sidebar-->
 
 				<div class="span9">
-
-					<article id="5-22-1998">
-						<div class="page-header">
-							<h1>May 22th, 1998</h1>
-						</div>
-
-						<h2 class="lead">Weblog 1.0</h2>
-
-						<div class="content md">
-So today I created this site [another site I created], which was fun all-on-its-own. It's not PHP, but it is a self-made micro-framework (_yeah that's what I'm calling it-lol_):
-
-![](media/screenshot-of-my-editing-this-post.GIF)
-
-It's just HTML and JavaScript _(simple JavaScript too)_ and it dynamically loads content using `xhr` requests. Just checkout [`header.js`](header.js) and [`footer.js`](footer.js). And, as you can see I can integrate [markdown](https://en.wikipedia.org/wiki/Markdown) and render that as HTML which makes writing content a little easier.
-
-Yeah, I straight-up did this via FTP using [Notepad++](https://notepad-plus-plus.org). But I do plan to version control it at some point. Probably not using Git or Github (might be too-new-of-a-technology).
-
-But the machine I built is actually the most of what I've done, and my attempt to live in it's eco-system and try out old (now vintage) stuff.
-
-More to come!
-						</div>
-					</article>
-
+					<!--
+					
+					To publish an article here, just add a .md file somewhere 
+					and duplicate the line below.
+					
+					If the file exists, this template will automatically
+					go and get that file, place it in the <article>
+					and populate the sidebar automatically using Js.
+					
+					-->
+					<article class="md" data-md="./blogs/5-22-1998.md"></article>
 				</div><!--/span9-->
-			</div><!--/row-->
-		</div><!--/container-->
+			
+		</div><!--/row-->
+	</div><!--/container-->
 
-		<footer class="footer">
-			<div class="container">
-				<p>Copyright &copy; 1998</p>
-			</div>
-		</footer>
+	<footer class="footer">
+		<div class="container">
+			<p>Copyright &copy; 1998</p>
+		</div>
+	</footer>
 
-		<script src="./bootstra.386/js/bootstrap.js"></script>
-		<script src="https://cdn.jsdelivr.net/remarkable/1.7.1/remarkable.min.js"></script>
-		<script src="https://code.jquery.com/jquery-2.2.4.min.js"
-			integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-			crossorigin="anonymous"></script>
-		<script src="./md.js"></script>
-	</body>
+	<script src="./bootstra.386/js/bootstrap.js"></script>
+	<script src="https://cdn.jsdelivr.net/remarkable/1.7.1/remarkable.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous"></script>
+
+	<script src="./app.js"></script>
+
+</body>
 </html>

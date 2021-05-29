@@ -1,0 +1,11 @@
+.page-header {
+	text-align: center;
+}
+
+#overview {
+	margin-top: 40px;
+}
+
+article:first-child .page-header {
+	margin-top: 0;
+}
