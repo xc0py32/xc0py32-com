@@ -1,9 +1,11 @@
-<header data-slug="weblog-1-0">
-	<h1>Weblog 1.0</h1>
-	<h2>May 22nd, 1998</h2>
-</header>
-
-<p class="lead">This content was written before the site you see now.</p>
+<?php
+	$title = 'Weblog 1.0';
+	$date  = 'May 22nd, 1998';
+	$slug  = 'weblog-1-0';
+	$data  = [
+		'lead' => 'This content was written before the site you see now.',
+	];
+?>
 
 So today I created this site, which was fun all-on-its-own. It's not PHP, but it is a self-made micro-framework (_yeah that's what I'm calling it-lol_):
 

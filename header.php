@@ -1,3 +1,4 @@
+<?php require_once( 'xc0phpy32.php' ); ?>
 <html lang="en">
 
 <head>
@@ -30,38 +31,11 @@
 				</header>
 
 				<ul class="nav nav-list bs-docs-sidenav affix-top blogs text-center">
-					<!-- Auto-populates when you publish a .md below-->
+					<?php the_published_blogs( function( $blog ) {
+						?><li><a href="./#<?php echo $blog->slug; ?>"><?php echo $blog->date; ?></a></li><?php
+					} ); ?>
 				</ul>
 			</div><!--/sidebar-->
 
 			<!-- Published Blogs -->
 			<div class="span9" class="articles">
-				<!--
-
-				To publish an article here, just add a .md file somewhere
-				and duplicate the line below.
-
-				If the file exists, this template will automatically
-				go and get that file, place it in the <article>
-				and populate the sidebar automatically using Js.
-
-				-->
-
-				<article data-md="./blogs/5-22-1998.md"></article>
-				<!--<article data-md="./blogs/5-29-1998.md"></article>-->
-
-			</div><!--/span9-->
-
-		</div><!--/row-->
-	</div><!--/container-->
-
-	<footer class="footer text-center">
-		<p><strong>Copyright &copy; 1998</strong></p>
-	</footer>
-
-	<script src="./bootstra.386/js/bootstrap.js"></script>
-	<script src="http://cdn.jsdelivr.net/remarkable/1.7.1/remarkable.min.js"></script>
-
-	<script src="./app.js"></script>
-</body>
-</html>
