@@ -86,7 +86,7 @@ With these two I could easily do `Run > Serve` and spin-up an easy `localhost` a
 
 ## Publishing
 
-So, the final piece is how I publish my website. Yes, basic FTP but I found a really cool tool called Web Site Publisher that allows you to click a button to deploy your site via FTP. It will also do an `rsync` like delete of files you remove, etc. So I added a Notepad++ run command:
+So, the final piece is how I publish my website. Yes, basic FTP but I found a really cool tool called [Web Site Publisher](http://www.cryer.co.uk/downloads/websitepublisher/index.htm) that allows you to click a button to deploy your site via FTP. It will also do an `rsync` like delete of files you remove, etc. So I added a Notepad++ run command:
 
 ![](./media/web-site-publisher.png)
 
