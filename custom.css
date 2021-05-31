@@ -1,3 +1,7 @@
 #overview {
 	margin-top: 40px;
 }
+
+img {
+	filter: none !important;
+}

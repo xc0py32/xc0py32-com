@@ -2,8 +2,14 @@
 
 require_once 'parsedown/Parsedown.php';
 
+if ( ! function_exists( 'mb_strlen' ) ) {
+	function mb_strlen( $a ) {
+		return PHP_INT_MAX;
+	}
+}
+
 $published_blogs = [
-	//'5-29-1998',
+	'5-29-1998',
 	'5-22-1998',
 ];
 
