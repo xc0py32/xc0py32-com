@@ -5,7 +5,7 @@
 
 So it's been a hot minute, and I have moved the retro weblog to xc0py32.com. First I built [this site] it using HTML and Javascript, and yeah on the _whistler1_ (my Windows XP machine). But, I just re-built it using PHP and it's going to be so much easier to manage this way vs having to do this without it.
 
-If, for some reason you're curious, you can see the [./media/v1.zip](code of that original site). I also went for a MS-DOS motif just for fun.
+If, for some reason you're curious, you can see the [http://./media/v1.zip](code of that original site). I also went for a MS-DOS motif just for fun.
 
 So how did I get here?
 
