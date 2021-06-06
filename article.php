@@ -10,7 +10,9 @@
 		<p class="lead"><?php echo the_blog_lead( $blog ); ?></p>
 	<?php endif; ?>
 
-	<?php echo markup( $blog->content ); ?>
+	<div class="content">
+		<?php echo markup( $blog->content ); ?>
+	</div>
 
 	<div class="article-nav">
 		<?php echo sep( [
