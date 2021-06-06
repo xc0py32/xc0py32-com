@@ -1,24 +1,31 @@
-<article id="<?php echo $blog->slug; ?>">
+<article id="<?php echo the_blog_slug( $blog ); ?>">
 	<header class="page-header text-center">
-		<h1><?php echo $blog->title; ?></h1>
-		<h2><?php echo $blog->date; ?></h2>
+		<a href="<?php echo the_blog_link( $blog ); ?>">
+			<h1><?php echo the_blog_title( $blog ); ?></h1>
+			<h2><?php echo the_blog_date( $blog ); ?></h2>
+		</a>
 	</header>
-	
-	<div class="article-nav">
-		<ul>
-			<li><a href="#top">&uarr; Top</a></li>
-		</ul>
-	</div>
 
 	<?php if ( $blog->data->lead ) : ?>
-		<p class="lead"><?php echo $blog->data->lead; ?></p>
+		<p class="lead"><?php echo the_blog_lead( $blog ); ?></p>
 	<?php endif; ?>
 
-	<?php markup( $blog->content ); ?>
+	<?php echo markup( $blog->content ); ?>
 
 	<div class="article-nav">
-		<ul>
-			<li><a href="#top">&uarr; Top</a></li>
-		</ul>
+		<?php echo sep( [
+			function( $blog ) {
+				?>
+					<?php if ( ! a_blog_was_requested() ): ?>
+						<a href="#top">&uarr; Top</a>
+					<?php endif; ?>
+				<?php
+			},
+			function ( $blog ) {
+				?>
+					<a href="<?php echo the_blog_link( $blog ); ?>">Link</a>
+				<?php
+			}
+		], '&mdash;', $blog ); ?>
 	</div>
 </article>

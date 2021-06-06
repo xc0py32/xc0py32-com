@@ -23,19 +23,7 @@
 	<div class="container" id="main">
 		<div class="row">
 
-			<!-- Sidebar -->
-			<div class="span3 bs-docs-sidebar text-right">
-				<header id="overview">
-					<h1>xc0py32<sup>v2</sup></h1>
-					<p>A retro weblog.</p>
-				</header>
-
-				<ul class="nav nav-list bs-docs-sidenav affix-top blogs text-center">
-					<?php the_published_blogs( function( $blog ) {
-						?><li><a href="./#<?php echo $blog->slug; ?>"><?php echo $blog->date; ?></a></li><?php
-					} ); ?>
-				</ul>
-			</div><!--/sidebar-->
+			<?php require_once( 'sidebar.php' ); ?>
 
 			<!-- Published Blogs -->
 			<div class="span9" class="articles">
